@@ -50,6 +50,7 @@
     self.tableView.headerView = nil;
     self.tableView = [[MXTableView alloc] init];
     self.tableView.frame = self.scrollView.frame;
+    //[[self.tableView enclosingScrollView] setDrawsBackground:NO];
     self.tableView.headerView = nil;
     self.tableView.autoresizingMask = YES;
 //    self.tableView.gridStyleMask = NSTableViewDashedHorizontalGridLineMask | NSTableViewSolidVerticalGridLineMask;

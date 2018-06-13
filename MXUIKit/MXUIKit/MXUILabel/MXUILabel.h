@@ -10,14 +10,13 @@
 
 @interface MXUILabel : NSTextField
 
-//@property (nonatomic,readonly)                      int                 widthOfText;
-//@property (nonatomic,readonly)                      int                 heightOfText;
-//@property (nonatomic,assign,getter=isUnderLined)    BOOL                underlined;
-//@property (nonatomic,assign)                        CGFloat             movingSpeed;
-//
-//-(void)setStringValue:(NSString *)stringValue;// XUI_UNAVAILABLE;
-//-(NSString *)stringValue XUI_UNAVAILABLE;
-//-(void)setAttributedStringValue:(NSAttributedString *)attributedStringValue XUI_UNAVAILABLE;
-//-(NSAttributedString *)attributedStringValue XUI_UNAVAILABLE;
+@property (nonatomic, assign, readonly) int widthOfText;
+@property (nonatomic, assign, readonly) int heightOfText;
+@property (nonatomic, assign) BOOL underlined;
+
+-(void)setStringValue:(NSString *)stringValue;
+-(NSString *)stringValue;
+-(void)setAttributedStringValue:(NSAttributedString *)attributedStringValue;
+-(NSAttributedString *)attributedStringValue;
 
 @end

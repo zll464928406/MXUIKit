@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31D404F20D1147500F9479A /* MXUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A31D404E20D1147500F9479A /* MXUISlider.m */; };
+		A31D405320D114A200F9479A /* NSSliderWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31D405120D114A200F9479A /* NSSliderWindowController.m */; };
+		A31D405420D114A200F9479A /* NSSliderWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A31D405220D114A200F9479A /* NSSliderWindowController.xib */; };
+		A31D405820D1167700F9479A /* MXUISliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A31D405720D1167700F9479A /* MXUISliderCell.m */; };
 		A31ED2B020C11B570060F2F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED2AF20C11B570060F2F5 /* AppDelegate.m */; };
 		A31ED2B320C11B570060F2F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED2B220C11B570060F2F5 /* ViewController.m */; };
 		A31ED2B520C11B580060F2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31ED2B420C11B580060F2F5 /* Assets.xcassets */; };
@@ -32,9 +36,18 @@
 		A31ED50920CA52050060F2F5 /* MXRowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED50820CA52050060F2F5 /* MXRowItem.m */; };
 		A31ED51520CA56430060F2F5 /* NSIndexPath+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED51420CA56430060F2F5 /* NSIndexPath+Additions.m */; };
 		A38CFF4C20CE4B070037D40A /* MXSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A38CFF4B20CE4B070037D40A /* MXSectionView.m */; };
+		A38CFF5520CE63620037D40A /* LabelWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38CFF5320CE63620037D40A /* LabelWindowController.m */; };
+		A38CFF5620CE63620037D40A /* LabelWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38CFF5420CE63620037D40A /* LabelWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31D404D20D1147500F9479A /* MXUISlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXUISlider.h; sourceTree = "<group>"; };
+		A31D404E20D1147500F9479A /* MXUISlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXUISlider.m; sourceTree = "<group>"; };
+		A31D405020D114A200F9479A /* NSSliderWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSliderWindowController.h; sourceTree = "<group>"; };
+		A31D405120D114A200F9479A /* NSSliderWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSliderWindowController.m; sourceTree = "<group>"; };
+		A31D405220D114A200F9479A /* NSSliderWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSSliderWindowController.xib; sourceTree = "<group>"; };
+		A31D405620D1167700F9479A /* MXUISliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXUISliderCell.h; sourceTree = "<group>"; };
+		A31D405720D1167700F9479A /* MXUISliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXUISliderCell.m; sourceTree = "<group>"; };
 		A31ED2AB20C11B570060F2F5 /* MXUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31ED2AE20C11B570060F2F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A31ED2AF20C11B570060F2F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +102,9 @@
 		A31ED51420CA56430060F2F5 /* NSIndexPath+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Additions.m"; sourceTree = "<group>"; };
 		A38CFF4A20CE4B070037D40A /* MXSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXSectionView.h; sourceTree = "<group>"; };
 		A38CFF4B20CE4B070037D40A /* MXSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXSectionView.m; sourceTree = "<group>"; };
+		A38CFF5220CE63620037D40A /* LabelWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelWindowController.h; sourceTree = "<group>"; };
+		A38CFF5320CE63620037D40A /* LabelWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelWindowController.m; sourceTree = "<group>"; };
+		A38CFF5420CE63620037D40A /* LabelWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A31D405520D1159200F9479A /* MXUISlider */ = {
+			isa = PBXGroup;
+			children = (
+				A31D404D20D1147500F9479A /* MXUISlider.h */,
+				A31D404E20D1147500F9479A /* MXUISlider.m */,
+				A31D405620D1167700F9479A /* MXUISliderCell.h */,
+				A31D405720D1167700F9479A /* MXUISliderCell.m */,
+			);
+			path = MXUISlider;
+			sourceTree = "<group>";
+		};
 		A31ED2A220C11B570060F2F5 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +158,7 @@
 				A31ED2F420C122F70060F2F5 /* MXSlideTopicCell.m */,
 				A38CFF4A20CE4B070037D40A /* MXSectionView.h */,
 				A38CFF4B20CE4B070037D40A /* MXSectionView.m */,
+				A38CFF5120CE63470037D40A /* Demo */,
 				A31ED2B420C11B580060F2F5 /* Assets.xcassets */,
 				A31ED2B620C11B580060F2F5 /* Main.storyboard */,
 				A31ED2B920C11B580060F2F5 /* Info.plist */,
@@ -143,6 +171,7 @@
 		A31ED2C220C11B6E0060F2F5 /* MXUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A31D405520D1159200F9479A /* MXUISlider */,
 				A31ED2C720C11C690060F2F5 /* MXUITableView */,
 				A31ED2C320C11B7E0060F2F5 /* MXUILabel */,
 			);
@@ -210,6 +239,19 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		A38CFF5120CE63470037D40A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A38CFF5220CE63620037D40A /* LabelWindowController.h */,
+				A38CFF5320CE63620037D40A /* LabelWindowController.m */,
+				A38CFF5420CE63620037D40A /* LabelWindowController.xib */,
+				A31D405020D114A200F9479A /* NSSliderWindowController.h */,
+				A31D405120D114A200F9479A /* NSSliderWindowController.m */,
+				A31D405220D114A200F9479A /* NSSliderWindowController.xib */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31ED2B520C11B580060F2F5 /* Assets.xcassets in Resources */,
+				A31D405420D114A200F9479A /* NSSliderWindowController.xib in Resources */,
 				A31ED2B820C11B580060F2F5 /* Main.storyboard in Resources */,
+				A38CFF5620CE63620037D40A /* LabelWindowController.xib in Resources */,
 				A31ED2F020C11E660060F2F5 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,8 +329,11 @@
 				A31ED2CA20C11CD50060F2F5 /* MXUITableView.m in Sources */,
 				A31ED50620CA500A0060F2F5 /* MXSectionItem.m in Sources */,
 				A31ED2EA20C11E660060F2F5 /* MASLayoutConstraint.m in Sources */,
+				A31D404F20D1147500F9479A /* MXUISlider.m in Sources */,
 				A31ED2C620C11BCC0060F2F5 /* MXUILabel.m in Sources */,
 				A31ED2BB20C11B580060F2F5 /* main.m in Sources */,
+				A38CFF5520CE63620037D40A /* LabelWindowController.m in Sources */,
+				A31D405320D114A200F9479A /* NSSliderWindowController.m in Sources */,
 				A31ED2EF20C11E660060F2F5 /* MASViewAttribute.m in Sources */,
 				A31ED2EB20C11E660060F2F5 /* NSArray+MASAdditions.m in Sources */,
 				A31ED2E820C11E660060F2F5 /* MASCompositeConstraint.m in Sources */,
@@ -294,6 +341,7 @@
 				A38CFF4C20CE4B070037D40A /* MXSectionView.m in Sources */,
 				A31ED2EC20C11E660060F2F5 /* View+MASAdditions.m in Sources */,
 				A31ED2E720C11E660060F2F5 /* ViewController+MASAdditions.m in Sources */,
+				A31D405820D1167700F9479A /* MXUISliderCell.m in Sources */,
 				A31ED4FD20CA4B430060F2F5 /* MXTableView.m in Sources */,
 				A31ED2B020C11B570060F2F5 /* AppDelegate.m in Sources */,
 				A31ED51520CA56430060F2F5 /* NSIndexPath+Additions.m in Sources */,

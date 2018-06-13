@@ -9,10 +9,31 @@
 #import "MXUILabel.h"
 
 @implementation MXUILabel
-
-- (void)drawRect:(NSRect)dirtyRect {
+- (void)drawRect:(NSRect)dirtyRect
+{
     [super drawRect:dirtyRect];
     
+}
+
+- (instancetype)initWithFrame:(NSRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self)
+    {
+        [self setupUI];
+    }
+    return self;
+}
+
+- (void)setupUI
+{
+    [self setBezeled:NO];
+//    [self setDrawsBackground:NO];
+    [self setEditable:NO];
+    [self setSelectable:NO];
+    [[self cell] setLineBreakMode:NSLineBreakByTruncatingTail];
+//    self.attributedString = nil;
+    self.underlined = NO;
 }
 
 @end

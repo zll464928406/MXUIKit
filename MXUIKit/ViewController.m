@@ -8,14 +8,18 @@
 
 #import "ViewController.h"
 #import "MXUITableView.h"
+#import "MXUISlider.h"
 #import "MXSlideTopicCell.h"
 #import "MXSectionView.h"
+#import "LabelWindowController.h"
+#import "NSSliderWindowController.h"
 #import "Masonry.h"
 
 @interface ViewController () <MXUITableViewDelegate, MXUITableViewDataSource>
 
 @property (nonatomic, strong) MXUITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) NSWindowController *windowController;
 
 
 @end
@@ -25,8 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataArray = @[@{@"type":@"NSTableView"},
-                       @{@"type":@"NSPopUpButton"},
+    self.dataArray = @[@{@"type":@"MXUILabel"},
+                       @{@"type":@"MXUISlider"},
                        @{@"type":@"NSButton"}
                        ];
     
@@ -38,14 +42,13 @@
         make.edges.equalTo(self.view);
     }];
     
-    [self.tableView expandSection:0 expand:NO];
-    [self.tableView expandSection:1 expand:NO];
+//    [self.tableView expandSection:0 expand:NO];
 }
 
 #pragma mark - MXUITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(MXUITableView *)tableView
 {
-    return 5;
+    return 1;
 }
 
 -(NSInteger)tableView:(MXUITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -81,12 +84,20 @@
 
 - (void)tableView:(MXUITableView *)tableView didSelectedAtPath:(NSIndexPath *)path
 {
-//    NSLog(@"%ld ----%ld", path.section, path.item);
-}
-
-- (void)tableView:(MXUITableView *)tableView doubleClickAtPath:(NSIndexPath *)path
-{
-    NSLog(@"%ld ----%ld", path.section, path.item);
+    NSDictionary *dict = [self.dataArray objectAtIndex:path.item];
+    NSString *type = [dict objectForKey:@"type"];
+    if ([type isEqualToString:@"MXUILabel"])
+    {
+        LabelWindowController *windowController = [[LabelWindowController alloc] init];
+        self.windowController = windowController;
+        [self.windowController.window orderFront:nil];
+    }
+    else if ([type isEqualToString:@"MXUISlider"])
+    {
+        NSSliderWindowController *windowController = [[NSSliderWindowController alloc] init];
+        self.windowController = windowController;
+        [self.windowController.window orderFront:nil];
+    }
 }
 
 
